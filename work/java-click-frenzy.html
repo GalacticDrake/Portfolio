@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hong Wai's Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="../styles/global.css" rel="stylesheet" />
+    <link href="../styles/work.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../index.html" class="logo"
+          ><i class="fa-solid fa-house"></i><span class="home">Home</span></a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div
+          class="overlay"
+          style="background-image: url(../src/images/main-4.png)"
+        ></div>
+        <div class="content">
+          <div class="intro-title">Click Frenzy</div>
+          <div class="intro-subtitle">
+            A 2D block clicking game with upgrades and abilities
+          </div>
+          <div class="intro-caption">JavaFX</div>
+        </div>
+      </section>
+
+      <section class="work work-grey">
+        <div class="work-component">
+          <div class="work-inner">
+            <div class="work-subtitle">Background</div>
+            <div class="work-title">A 2D blocky game with upgrades</div>
+            <div class="work-desc">
+              This project is a step towards learning object oriented
+              programming.
+            </div>
+            <div class="work-desc">
+              The aim of this game is to get the highest score in a set amount
+              of time. Blocks are generated at random: green, blue, pink and
+              gold blocks. Each colour represents the rarity, each carrying a
+              set number of points.
+            </div>
+            <div class="work-desc">
+              Upon collecting a number of points, they can be used to upgrade
+              skills, such as score multiplier and timer increments.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="work-component">
+          <div class="work-inner">
+            <div class="work-subtitle">Blocks</div>
+            <div class="work-title">Block scores and variety</div>
+            <div class="work-desc">
+              Each block has a score that can be collected. Click as many higher
+              quality blocks to get the most score.
+            </div>
+            <div class="card-container expanded">
+              <div class="card">
+                <div class="card-inner info">
+                  <div class="card-subtitle">Common</div>
+                  <div class="card-title">Green block</div>
+                  <div class="card-desc">Each green adds +1 to the score.</div>
+                </div>
+                <div class="card-inner image">
+                  <img
+                    src="../src/images/java-1.png"
+                    alt="green"
+                    height="100"
+                  />
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-inner info">
+                  <div class="card-subtitle">Rare</div>
+                  <div class="card-title">Blue block</div>
+                  <div class="card-desc">Each blue adds +2 to the score.</div>
+                </div>
+                <div class="card-inner image">
+                  <img src="../src/images/java-2.png" alt="blue" height="100" />
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-inner info">
+                  <div class="card-subtitle">Epic</div>
+                  <div class="card-title">Purple block</div>
+                  <div class="card-desc">Each purple adds +3 to the score.</div>
+                </div>
+                <div class="card-inner image">
+                  <img
+                    src="../src/images/java-3.png"
+                    alt="purple"
+                    height="100"
+                  />
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-inner info">
+                  <div class="card-subtitle">Legendary</div>
+                  <div class="card-title">Gold block</div>
+                  <div class="card-desc">Each gold adds +5 to the score.</div>
+                </div>
+                <div class="card-inner image">
+                  <img src="../src/images/java-4.png" alt="gold" height="100" />
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-inner info">
+                  <div class="card-subtitle">Trap</div>
+                  <div class="card-title">Grey block</div>
+                  <div class="card-desc">
+                    Each grey removes -5 from the score.
+                  </div>
+                </div>
+                <div class="card-inner image">
+                  <img src="../src/images/java-5.png" alt="grey" height="100" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="work-component">
+          <div class="work-inner">
+            <div class="work-subtitle">Upgrades</div>
+            <div class="work-title">
+              Claim upgrades and push your score further
+            </div>
+            <div class="work-desc">
+              Upon collecting a set number of points, an upgrade can be
+              purchased.
+            </div>
+            <div class="card-container expanded">
+              <div class="card">
+                <div class="card-inner info">
+                  <div class="card-subtitle">Score Multiplier</div>
+                  <div class="card-title">
+                    Increase your score by a multiplier
+                  </div>
+                  <div class="card-desc">
+                    Six stages (1, 2, 5, 10, 20, 50) to get, with each unlocked
+                    after the previous is attained.
+                  </div>
+                </div>
+                <div class="card-inner image">
+                  <img
+                    src="../src/images/java-6.png"
+                    alt="score multiplier"
+                    height="150"
+                  />
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-inner info">
+                  <div class="card-subtitle">Time Extender</div>
+                  <div class="card-title">
+                    Extend the time during the gameplay
+                  </div>
+                  <div class="card-desc">
+                    Six stages (60, 70, 80, 90, 100, 100) in seconds to get.
+                  </div>
+                </div>
+                <div class="card-inner image">
+                  <img
+                    src="../src/images/java-7.png"
+                    alt="time extender"
+                    height="150"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="work-component">
+          <div class="work-inner">
+            <div class="work-subtitle">Abilities</div>
+            <div class="work-title">
+              Randomised abilities help boost the score even more
+            </div>
+            <div class="work-desc">
+              Upon clicking a set number of times, an ability will be granted
+              randomly.
+            </div>
+            <div class="card-container expanded">
+              <div class="card">
+                <div class="card-inner info">
+                  <div class="card-subtitle">Doubled Score</div>
+                  <div class="card-title">
+                    Double your score with a x2 ability
+                  </div>
+                  <div class="card-desc">
+                    Each block's score is now multipled twice. Achieve a higher
+                    score quicker.
+                  </div>
+                </div>
+                <div class="card-inner image">
+                  <img
+                    src="../src/images/java-8.png"
+                    alt="score multiplier"
+                    height="150"
+                  />
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-inner info">
+                  <div class="card-subtitle">Touch of Midas</div>
+                  <div class="card-title">Be greedy, take them all!</div>
+                  <div class="card-desc">
+                    Every block is golden. Each block is also doubled! This
+                    ability is rarer.
+                  </div>
+                </div>
+                <div class="card-inner image">
+                  <img
+                    src="../src/images/java-9.png"
+                    alt="time extender"
+                    height="150"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project-links">
+        <div class="link-label">Related links to current project</div>
+        <div class="link">
+          <a href="https://github.com/GalacticDrake/ClickFrenzy"
+            >View github project</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-label">
+        <a href="../index.html" class="logo"><span>Back to home</span></a>
+      </div>
+      <div class="footer-links">
+        <span>
+          <a
+            href="https://www.linkedin.com/in/lah-hong-wai-233041250/"
+            target="_blank"
+            ><i class="icon-size fa-brands fa-linkedin"></i
+          ></a>
+        </span>
+        <span>
+          <a href="#"><i class="icon-size fa-solid fa-file"></i></a>
+        </span>
+        <span>
+          <a href="https://github.com/GalacticDrake" target="_blank"
+            ><i class="icon-size fa-brands fa-github"></i
+          ></a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

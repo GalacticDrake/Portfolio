@@ -1,0 +1,105 @@
+@import url("library.css");
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 48px;
+  gap: 48px;
+  margin: 0 auto;
+}
+
+.greet {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 300px;
+  min-width: 300px;
+}
+
+.greet-intro {
+  width: 100%;
+  color: var(--green);
+  font-weight: bold;
+  font-size: var(--heading-h4);
+}
+
+.greet-subtitle {
+  color: var(--grey-1);
+  font-size: var(--subtitle);
+}
+
+.greet-links {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+/* Work */
+
+.work {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-content: stretch;
+  width: 100%;
+}
+
+.work-inner {
+  width: calc(50% - 16px);
+  max-width: 500px;
+}
+
+.work-component {
+  position: relative;
+  min-height: 350px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-position: center;
+  position: absolute;
+  filter: brightness(0.3);
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s background-size ease-in;
+}
+
+.overlay.vertical {
+  background-size: auto 100%;
+}
+
+.overlay.horizontal {
+  background-size: 100% auto;
+}
+
+.work-component:hover .overlay.vertical {
+  background-size: auto 110%;
+}
+
+.work-component:hover .overlay.horizontal {
+  background-size: 110% auto;
+}
+
+.content {
+  z-index: 1;
+}
+
+.work-title {
+  font-size: var(--heading-h4);
+  color: var(--white);
+  font-weight: bold;
+  text-align: center;
+}
+
+.work-subtitle {
+  font-size: var(--body);
+  color: var(--white);
+  text-align: center;
+}

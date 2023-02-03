@@ -1,0 +1,83 @@
+@import url("library.css");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: var(--font);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 16px 0;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: var(--black-tp);
+  backdrop-filter: blur(3px);
+}
+
+header div {
+  width: 1000px;
+}
+
+header div .logo,
+header div .logo span {
+  color: var(--white);
+}
+
+a:link,
+a:visited {
+  color: var(--grey-1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--green);
+}
+
+.logo:hover,
+.logo:hover span {
+  color: var(--grey-2);
+}
+
+.home {
+  margin-left: 8px;
+}
+
+.icon-size {
+  font-size: var(--heading-h4);
+}
+
+/* footer */
+footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: solid 2px var(--grey-2);
+  padding: 32px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-label {
+  flex: 1;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+footer .logo:hover span {
+  color: var(--green);
+}

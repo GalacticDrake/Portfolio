@@ -1,0 +1,288 @@
+@import url("library.css");
+
+.intro {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  filter: brightness(0.3);
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  z-index: 1;
+}
+
+.intro-title {
+  font-size: var(--heading-h1);
+  color: var(--white);
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro-subtitle {
+  font-size: var(--heading-h4);
+  color: var(--white);
+  text-align: center;
+}
+
+.intro-caption {
+  font-size: var(--heading-h6);
+  color: var(--grey-3);
+  text-align: center;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
+/* alert */
+
+.alert {
+  padding: 8px 0;
+  background: var(--green);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+.alert-inner {
+  max-width: 1000px;
+}
+
+/* content */
+
+.work {
+  padding: 64px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  border-bottom: 1px solid var(--grey-2);
+}
+
+.work-component {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.work-subtitle {
+  text-transform: uppercase;
+  font-size: var(--subtitle);
+  color: var(--grey-1);
+}
+
+.work-title {
+  font-size: var(--heading-h4);
+  margin-bottom: 8px;
+}
+
+.work-desc {
+  margin-top: 16px;
+  color: var(--grey-1);
+}
+
+/* card-row */
+
+.card-row-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.card-row-container .card {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 24px);
+  min-width: 225px;
+}
+
+.card-row-container ul {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.card-row-container li {
+  color: var(--grey-1);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 0 64px;
+  margin-top: 64px;
+}
+
+.card-container .card {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+
+.card-container .card.even {
+  flex-direction: row-reverse;
+}
+
+.card-container .card-inner {
+  width: 50%;
+}
+
+.card-container .card-inner.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-container .card-inner.image {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container.expanded .card-inner {
+  width: auto;
+}
+
+.card-container.expanded .card-inner.info {
+  flex: 1;
+}
+
+.card-container .card-subtitle {
+  text-transform: uppercase;
+  font-size: var(--subtitle);
+  color: var(--grey-1);
+}
+
+.card-title {
+  font-size: var(--heading-h4);
+  margin-bottom: 8px;
+}
+
+.card-desc {
+  color: var(--grey-1);
+}
+
+.card-container .card-link {
+  margin-top: 16px;
+}
+
+.card-container .card-link a {
+  color: var(--grey-1);
+}
+
+.card-container .card-link a:hover {
+  color: var(--green);
+}
+
+/* card-custom-1 */
+.card-custom-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.cc1-draw {
+  justify-content: center;
+  padding: 8px 58px;
+}
+
+.cc1-circle {
+  width: 70px;
+  height: 70px;
+  border: solid 2px var(--grey-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.cc1-line {
+  height: 2px;
+  display: flex;
+  flex: 1 1 1px;
+  background: var(--grey-2);
+}
+
+.cc1-info {
+  justify-content: space-between;
+}
+
+.cc1-20-w {
+  width: 20%;
+}
+
+.cc1-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* image container */
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-comp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+}
+
+/* colour palette */
+
+.palette {
+  display: flex;
+  flex-direction: row;
+  margin-top: 48px;
+  padding: 16px 32px;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.colour {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+.colour-box {
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.colour-info {
+  text-align: center;
+  color: var(--grey-1);
+}
+
+/* project links */
+
+.project-links {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.link-label {
+  margin-bottom: 8px;
+}
